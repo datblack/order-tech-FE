@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+    color: #1a2027;
+}
+
+.active button {
+    color: red;
+    transition: all 0.5s linear;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.three-line {
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+}
+
+.two-line {
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+}
+
+.one-line {
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+}
+
+.product__detail .slick-prev {
+    left: 5px;
+    z-index: 5;
+}
+
+.product__detail .slick-next {
+    right: 5px;
+    z-index: 5;
+}
+
+.categories_container .slick-slide > div {
+    margin: 0 5px;
+}
+
+.categories_container .slick-list {
+    margin: 0 -5px;
+}
+
+.category__see__more {
+    display: flex !important;
+}
+
+.Toastify__toast-container {
+    width: 90vw !important;
+    top: 10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    border-radius: 12px !important;
+    margin: 0 auto !important;
+}
